@@ -1,5 +1,10 @@
 import math
 
+# IMPORTANTE:
+# os vertices sao descritos nos arquivos a partir de 1 mas são
+# armazenados a partir do zero. Quando imprimir algum vértice, somar 1 ao valor
+# dele
+
 class Grafo:
 	def __init__(self, arquivo):
 		# representa um numero infinito
