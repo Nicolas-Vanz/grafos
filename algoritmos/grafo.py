@@ -66,6 +66,9 @@ class Grafo:
 					counter += 1
 		return counter
 
+	def arestas(self):
+		return [(i, j, self.matriz[i][j]) for i in range(self.vertices) for j in range(self.vertices) if self.matriz[i][j] != self.inf]
+
 	def rotulo(self, v):
 		self.validar_vertice(v)
 		rotulo = self.rotulos[v]
